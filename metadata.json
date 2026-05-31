@@ -1,0 +1,10 @@
+{
+  "name": "CareBridge",
+  "description": "Malaysia's trusted care and assistance platform for families, connecting them with local helpers for daily micro-services.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
