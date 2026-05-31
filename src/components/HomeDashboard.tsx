@@ -132,31 +132,31 @@ export default function HomeDashboard() {
     <div id="home-dashboard" className="flex flex-col gap-6 w-full min-h-[640px] h-full pb-20 bg-gray-50/50">
       
       {/* Top Header Block: Greeting, Location Selector, and search bar */}
-      <div className="bg-gradient-to-b from-teal-900 to-teal-950 text-white rounded-b-[2.5rem] px-6 pt-9 pb-40 shadow-xl shadow-teal-950/15 relative overflow-hidden">
+      <div className="bg-gradient-to-b from-teal-900 to-teal-950 text-white rounded-b-[2.5rem] px-6 pt-9 md:pb-40 pb-56 shadow-xl shadow-teal-950/15 relative overflow-hidden">
         
         {/* Background Accent Gradients */}
         <div className="absolute top-0 right-0 w-36 h-36 rounded-full bg-teal-800/40 blur-2xl pointer-events-none" />
         <div className="absolute bottom-[-20%] left-[-10%] w-44 h-44 rounded-full bg-amber-500/10 blur-2xl pointer-events-none" />
 
-        <div className="flex justify-between items-start mb-8">
+        <div className="md:flex justify-between items-start md:mb-8 mb-0">
           <div className="space-y-1.5">
-            <div className="flex items-center gap-1.5 text-teal-150 text-xs font-bold uppercase tracking-wider mb-1.5">
+            <div className="flex items-center gap-1.5 text-teal-150 text-xs font-bold uppercase tracking-wider mb-1.5 ">
               <span>{greetingIcon}</span>
               {timeGreeting}
             </div>
-            <h2 id="greeting-username" className="text-2xl font-extrabold tracking-tight mt-1.5">
+            <h2 id="greeting-username" className="text-2xl font-extrabold tracking-tight mt-1.5 mb-3.5 md:mb-0">
               {currentUser.name}
             </h2>
           </div>
 
           {/* Location Selector */}
-          <div className="bg-white/10 hover:bg-white/15 border border-white/10 rounded-[1.25rem] px-4.5 py-3 flex items-center gap-2 transition-all text-xs font-semibold cursor-pointer">
+          <div className="bg-white/10 hover:bg-white/15 border border-white/10 rounded-[1.25rem] px-4.5 py-3 flex items-center gap- transition-all text-xs font-semibold cursor-pointer">
             <MapPin className="w-4 h-4 text-amber-400 fill-amber-400/20" />
             <select 
               id="location-picker-select"
               value={selectedLocationLabel} 
               onChange={(e) => setSelectedLocationLabel(e.target.value)}
-              className="bg-transparent border-none text-white focus:outline-none font-medium cursor-pointer text-xs py-0.5"
+              className="bg-transparent border-none text-white focus:outline-none font-medium cursor-pointer text-xs py-0.5 px-16 md:px-0"
             >
               {currentUser.savedAddresses.map((addr) => (
                 <option key={addr.label} value={addr.label} className="text-teal-950 text-xs">
@@ -325,7 +325,7 @@ export default function HomeDashboard() {
         </div>
 
         {/* Urgent Emergency / Hotline Panel */}
-        <div className="p-4 rounded-2xl bg-red-500/5 hover:bg-red-500/10 border border-red-500/10 flex items-center justify-between gap-4 pb-7 mb-28 transition-all">
+        <div className="p-4 rounded-2xl bg-red-500/5 hover:bg-red-500/10 border border-red-500/10 flex items-center justify-between gap-4 pb-7 mb-20 transition-all">
           <div className="flex items-center gap-3">
             <span className="flex items-center justify-center p-2 rounded-xl bg-red-100 text-red-700 animate-pulse">
               <ShieldAlert className="w-5 h-5" />
