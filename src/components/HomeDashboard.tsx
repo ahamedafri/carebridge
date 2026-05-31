@@ -156,7 +156,7 @@ export default function HomeDashboard() {
               id="location-picker-select"
               value={selectedLocationLabel} 
               onChange={(e) => setSelectedLocationLabel(e.target.value)}
-              className="bg-transparent border-none text-white focus:outline-none font-medium cursor-pointer text-xs py-0.5 px-16 md:px-0"
+              className="bg-transparent border-none text-white focus:outline-none font-medium cursor-pointer text-xs py-0.5 px-6 md:px-0"
             >
               {currentUser.savedAddresses.map((addr) => (
                 <option key={addr.label} value={addr.label} className="text-teal-950 text-xs">
