@@ -63,7 +63,7 @@ export default function WalletTabView() {
         </div>
       </div>
 
-      <div className="px-6 py-5 flex flex-col gap-6">
+      <div className="px-6 py-5 pb-20 flex flex-col gap-6">
 
         {/* 2. Promo code redemption */}
         <div className="bg-white rounded-2xl p-4.5 border border-gray-100 shadow-sm flex flex-col gap-3">
