@@ -132,7 +132,7 @@ export default function HomeDashboard() {
     <div id="home-dashboard" className="flex flex-col gap-6 w-full min-h-[640px] h-full pb-20 bg-gray-50/50">
       
       {/* Top Header Block: Greeting, Location Selector, and search bar */}
-      <div className="bg-gradient-to-b from-teal-900 to-teal-950 text-white rounded-b-[2.5rem] px-6 pt-9 pb-14 shadow-xl shadow-teal-950/15 relative overflow-hidden">
+      <div className="bg-gradient-to-b from-teal-900 to-teal-950 text-white rounded-b-[2.5rem] px-6 pt-9 pb-40 shadow-xl shadow-teal-950/15 relative overflow-hidden">
         
         {/* Background Accent Gradients */}
         <div className="absolute top-0 right-0 w-36 h-36 rounded-full bg-teal-800/40 blur-2xl pointer-events-none" />
@@ -325,7 +325,7 @@ export default function HomeDashboard() {
         </div>
 
         {/* Urgent Emergency / Hotline Panel */}
-        <div className="p-4 rounded-2xl bg-red-500/5 hover:bg-red-500/10 border border-red-500/10 flex items-center justify-between gap-4 transition-all">
+        <div className="p-4 rounded-2xl bg-red-500/5 hover:bg-red-500/10 border border-red-500/10 flex items-center justify-between gap-4 pb-7 mb-28 transition-all">
           <div className="flex items-center gap-3">
             <span className="flex items-center justify-center p-2 rounded-xl bg-red-100 text-red-700 animate-pulse">
               <ShieldAlert className="w-5 h-5" />
@@ -337,7 +337,7 @@ export default function HomeDashboard() {
           </div>
           <a
             href="tel:999"
-            className="p-2.5 px-3.5 bg-red-650 hover:bg-red-700 text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-md shadow-red-700/10 transition-colors"
+            className="p-2.5 px-3.5 bg-red-650 bg-white text-red-700 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-md shadow-red-700/10 transition-colors"
           >
             <PhoneCall className="w-3.5 h-3.5" />
             Call Emergency (999)

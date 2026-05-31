@@ -196,7 +196,7 @@ export default function ProfileTabView() {
         </div>
 
         {/* Support Portal Link and Reset option */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 pb-20">
           <button
             onClick={() => alert("Launching 24/7 client care chat desk...")}
             className="w-full py-3.5 bg-white border border-gray-200 rounded-2xl text-xs font-bold text-teal-950 hover:bg-gray-50 flex items-center justify-center gap-1.5 transition"
@@ -208,7 +208,7 @@ export default function ProfileTabView() {
           <button
             id="btn-logout"
             onClick={handleResetDemo}
-            className="w-full py-3.5 bg-red-50 hover:bg-red-100/50 border border-red-500/10 rounded-2xl text-xs font-bold text-red-750 flex items-center justify-center gap-1.5 transition"
+            className="w-full py-3.5 bg-red-50 hover:bg-red-100/50 border border-red-500/10 rounded-2xl text-xs font-bold text-red-950 flex items-center justify-center gap-1.5 transition"
           >
             <LogOut className="w-4 h-4" />
             Reset Prototype State (Log Out)
